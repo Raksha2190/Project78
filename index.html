@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Project 78</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>My Family</h1>
+        <hr>
+        <img id="images" src="download.jpg">
+        <hr>
+        <h2>My Family Book</h2>
+        <h3 id="relation"></h3>
+        <h4 id="names"></h4>
+        <br><br>
+        <button onclick="next()">NEXT</button>
+
+        <script>
+            var images=["father.jpg","mother.jpg","husband.jpg","arush.gif","sister.jpg","brother.jpg","Me.png"];
+            var relations=["My Father","My Mother","My Husband","My Son","My Sister","My Brother","Me"];
+            var names=["Premananda Nayak","Latha Nayak","Avinash Pai","Arush Pai","Rekha Nayak","Naveen Nayak","Raksha Nayak"];
+            var i=0;
+
+            function next(){
+                document.getElementById("images").src=images[i];
+                document.getElementById("relation").innerHTML=relations[i];
+                document.getElementById("names").innerHTML=names[i];
+                i++
+
+                if(i>6)
+                {
+                    i=0;
+                }
+            }
+
+
+
+        </script>
+    </body>
+</html>
